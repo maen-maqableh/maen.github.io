@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بي</title>
-   <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="mystyles.css">
 </head>
 <body>
     <header>
         <h1>اتصل بي</h1>
+        <!-- هيكل التنقل -->
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="contact.html">اتصل بي</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section>
@@ -27,10 +34,39 @@
             <img src="images/gmail_icon.png" alt="Gmail Icon" width="30">
             التواصل عبر Gmail
         </a>
+
+        <!-- نموذج الاتصال -->
+        <h2>نموذج الاتصال</h2>
+        <form action="#" method="post">
+            <label for="fullname">الاسم الكامل:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="country">البلد:</label>
+            <select id="country" name="country" required>
+                <option value="">اختر بلدك</option>
+                <option value="الأردن">الأردن</option>
+                <option value="السعودية">السعودية</option>
+                <option value="الإمارات">الإمارات</option>
+                <option value="مصر">مصر</option>
+                <option value="غير ذلك">غير ذلك</option>
+            </select>
+            <br><br>
+
+            <label for="comments">تعليقاتك:</label>
+            <textarea id="comments" name="comments" rows="5" required></textarea>
+            <br><br>
+
+            <button type="submit">إرسال</button>
+        </form>
     </section>
 
     <footer>
-        <a href="index1.html">العودة إلى الصفحة الرئيسية</a>
+        <a href="index.html">العودة إلى الصفحة الرئيسية</a>
     </footer>
 </body>
 </html>
